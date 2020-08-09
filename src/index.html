@@ -15,25 +15,25 @@
 
 	<body translate="no">
 		<nav id="navbar" class="sidebar">
-			<h3 class="ml-1">JS Documentation</h3>
-			<a class="menu-item" href="#Introduction">Introduction</a>
-			<a class="menu-item" href="#What_you_should_already_know">What you should already know</a>
-			<a class="menu-item" href="#JavaScript_and_Java">JavaScript and Java</a>
-			<a class="menu-item" href="#Hello_world">Hello world</a>
-			<a class="menu-item" href="#Variables">Variables</a>
-			<a class="menu-item" href="#Declaring_variables">Declaring variables</a>
-			<a class="menu-item" href="#Variable_scope">Variable scope</a>
-			<a class="menu-item" href="#Global_variables">Global variables</a>
-			<a class="menu-item" href="#Constants">Constants</a>
-			<a class="menu-item" href="#Data_types">Data types</a>
-			<a class="menu-item" href="#if...else_statement">if...else statement</a>
-			<a class="menu-item" href="#while_statement">while statement</a>
-			<a class="menu-item" href="#Function_declarations">Function declarations</a>
-			<a class="menu-item" href="#Reference">Reference</a>
+			<header><h3 class="ml-1">JS Documentation</h3></header>
+			<a class="nav-link" href="#Introduction">Introduction</a>
+			<a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+			<a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+			<a class="nav-link" href="#Hello_world">Hello world</a>
+			<a class="nav-link" href="#Variables">Variables</a>
+			<a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+			<a class="nav-link" href="#Variable_scope">Variable scope</a>
+			<a class="nav-link" href="#Global_variables">Global variables</a>
+			<a class="nav-link" href="#Constants">Constants</a>
+			<a class="nav-link" href="#Data_types">Data types</a>
+			<a class="nav-link" href="#if...else_statement">if...else statement</a>
+			<a class="nav-link" href="#while_statement">while statement</a>
+			<a class="nav-link" href="#Function_declarations">Function declarations</a>
+			<a class="nav-link" href="#Reference">Reference</a>
 		</nav>
 
-		<div id="main-doc" class="content">
-			<section id="Introduction">
+		<main id="main-doc" class="content">
+			<section id="Introduction" class="main-section">
 				<header><h3 class="title">Introduction</h3></header>
 				<article>
 					<p>
@@ -62,7 +62,7 @@
 					</ul>
 				</article>
 			</section>
-			<section id="What_you_should_already_know">
+			<section id="What_you_should_already_know" class="main-section">
 				<header><h3 class="title">What you should already know</h3></header>
 				<article>
 					<p>This guide assumes you have the following basic background:</p>
@@ -78,7 +78,7 @@
 					</ul>
 				</article>
 			</section>
-			<section id="JavaScript_and_Java">
+			<section id="JavaScript_and_Java" class="main-section">
 				<header><h3 class="title">JavaScript and Java</h3></header>
 				<article>
 					<p>
@@ -103,7 +103,7 @@
 					</p>
 				</article>
 			</section>
-			<section id="Hello_world">
+			<section id="Hello_world" class="main-section">
 				<header><h3 class="title">Hello world</h3></header>
 				<article>
 					To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
@@ -112,7 +112,7 @@
 					Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
 				</article>
 			</section>
-			<section id="Variables">
+			<section id="Variables" class="main-section">
 				<header><h3 class="title">Variables</h3></header>
 				<p>
 					You use variables as symbolic names for values in your application. The names of variables, called
@@ -128,7 +128,7 @@
 					sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
 				</p>
 			</section>
-			<section id="Declaring_variables">
+			<section id="Declaring_variables" class="main-section">
 				<header><h3 class="title">Declaring variables</h3></header>
 				<article>
 					You can declare a variable in three ways:
@@ -146,7 +146,7 @@
 					</p>
 				</article>
 			</section>
-			<section id="Variable_scope">
+			<section id="Variable_scope" class="main-section">
 				<header><h3 class="title">Variable scope</h3></header>
 				<article>
 					<p>
@@ -167,7 +167,7 @@
 					<code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code>
 				</article>
 			</section>
-			<section id="Global_variables">
+			<section id="Global_variables" class="main-section">
 				<header><h3 class="title">Global variables</h3></header>
 				<article>
 					<p>
@@ -181,7 +181,7 @@
 					</p>
 				</article>
 			</section>
-			<section id="Constants">
+			<section id="Constants" class="main-section">
 				<header><h3 class="title">Constants</h3></header>
 				<article>
 					<p>
@@ -209,7 +209,7 @@
 					<code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
 				</article>
 			</section>
-			<section id="Data_types">
+			<section id="Data_types" class="main-section">
 				<header><h3 class="title">Data types</h3></header>
 				<article>
 					<p>The latest ECMAScript standard defines seven data types:</p>
@@ -237,7 +237,7 @@
 					objects as named containers for values, and functions as procedures that your application can perform.
 				</article>
 			</section>
-			<section id="if...else_statement">
+			<section id="if...else_statement" class="main-section">
 				<header><h3 class="title">if...else statement</h3></header>
 				<article>
 					Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to
@@ -268,7 +268,7 @@
 					<code>if ((x = y)) { /* statements here */ }</code>
 				</article>
 			</section>
-			<section id="while_statement">
+			<section id="while_statement" class="main-section">
 				<header><h3 class="title">while statement</h3></header>
 				<article>
 					A while statement executes its statements as long as a specified condition evaluates to true. A while
@@ -300,7 +300,7 @@
 					</p>
 				</article>
 			</section>
-			<section id="Function_declarations">
+			<section id="Function_declarations" class="main-section">
 				<header><h3 class="title">Function declarations</h3></header>
 				<article>
 					A function definition (also called a function declaration, or function statement) consists of the function
@@ -331,7 +331,7 @@
 					</p>
 				</article>
 			</section>
-			<section id="Reference">
+			<section id="Reference" class="main-section">
 				<header><h3 class="title">Reference</h3></header>
 				<article>
 					<ul>
@@ -342,7 +342,7 @@
 					</ul>
 				</article>
 			</section>
-		</div>
+		</main>
 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>

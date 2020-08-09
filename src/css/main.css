@@ -2,17 +2,18 @@ body {
 	background: linear-gradient(to left top, gray, white) fixed;
 }
 .sidebar {
+	top: 0;
 	margin: 0;
 	padding: 0;
 	width: 200px;
 	background-color: white;
-	box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.2);
 	position: fixed;
 	height: 100%;
 	overflow: auto;
 }
 
-.menu-item {
+.nav-link {
 	text-transform: uppercase;
 	font-size: 0.8rem;
 	font-weight: 500;
@@ -23,19 +24,19 @@ body {
 	transition: color ease 0.3s;
 }
 
-.menu-item--active {
+.nav-link--active {
 	color: var(--red);
 }
-.menu-item--active {
+.nav-link--active {
 	color: black;
 }
 
-.menu-item:hover {
+.nav-link:hover {
 	color: black;
 }
 
 @media screen and (min-width: 850px) {
-	.menu-item--active {
+	.nav-link--active {
 		border-left: 4px solid var(--red);
 		box-shadow: inset 10px 0px 17px -13px var(--red);
 	}
@@ -58,7 +59,7 @@ body {
 	color: white;
 }
 
-div.content {
+.content {
 	margin-left: 200px;
 	padding: 1px 16px;
 	height: 1000px;
@@ -73,7 +74,7 @@ div.content {
 	.sidebar a {
 		float: left;
 	}
-	div.content {
+	.content {
 		margin-left: 0;
 	}
 }
